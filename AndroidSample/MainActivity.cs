@@ -49,7 +49,7 @@ namespace AndroidSample
                 Page page = doc.Pages[0];
 
                 // render the page using default settings
-                int[] bitmapData = page.Render((int)page.Width, (int)page.Height, new RenderingSettings());
+                int[] bitmapData = page.RenderAsInts((int)page.Width, (int)page.Height, new RenderingSettings());
 
                 // convert given data to an android bitmap
                 Bitmap bm = Bitmap.CreateBitmap(bitmapData, (int)page.Width, (int)page.Height, Bitmap.Config.Argb8888);

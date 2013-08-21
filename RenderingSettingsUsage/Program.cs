@@ -21,7 +21,7 @@
                 RenderingSettings settings = new RenderingSettings();
 
                 // i want a special background for my pages
-                settings.BackgroundColor = Color.LawnGreen.ToArgb();
+                settings.BackgroundColor = (uint) Color.LawnGreen.ToArgb();
 
                 // annotaions objects like notes, will be drawn
                 settings.DrawAnotations = true;

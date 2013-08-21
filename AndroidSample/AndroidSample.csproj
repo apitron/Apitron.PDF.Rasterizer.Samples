@@ -43,7 +43,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Apitron.PDF.Rasterizer">
-      <HintPath>..\..\android\Apitron.PDF.Rasterizer.dll</HintPath>
+      <HintPath>..\..\Xamarin.Android\Apitron.PDF.Rasterizer.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="Mono.Security" />

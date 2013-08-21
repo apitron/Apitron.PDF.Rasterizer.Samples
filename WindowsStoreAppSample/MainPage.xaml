@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="WindowsStoreAppSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WindowsStoreAppSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Image x:Name="myImage" HorizontalAlignment="Left" Height="717" Margin="33,24,0,0" VerticalAlignment="Top" Width="567"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="812,232,0,0" VerticalAlignment="Top" Click="btnExit_Click" RenderTransformOrigin="0.787,9.187" Width="82"/>
+        <Button x:Name="btnRender" Content="Render" HorizontalAlignment="Left" Margin="812,163,0,0" VerticalAlignment="Top" Click="btnRender_Click"/>
+    </Grid>
+</Page>
