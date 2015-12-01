@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html ng-app="mainApp" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="/Scripts/angular.min.js"></script>
+    <script src="/Scripts/app/app.js"></script>
+    <script src="/Scripts/app/renderingController.js"></script>    
+    <link rel="stylesheet" type="text/css" href="Content/styles.css">
+</head>
+    <body ng-controller="pageByPageRenderingController" ng-init="setup()">        
+            <div class="navbarContainer">
+                <ul>
+                    <li ng-click="loadFile()">Load file</li>
+                    <li ng-click="renderPrev()">Prev</li>
+                    <li ng-click="renderNext()">Next</li>
+                    <li onclick="alert('Apitron PDF Rasterizer usage sample, implemented using WebAPI and AngularJS.')">About</li>
+                </ul>
+            </div>
+            <div class="viewArea">
+                <span id="aligner">{{errorText}}</span>
+                <img ng-src="/images/loading.gif" class="{{progressBarClass}}" />                
+                <img ng-src="{{imageSource}}" class="{{pageViewClass}} shadow" />               
+            </div>        
+    </body>
+</html>
