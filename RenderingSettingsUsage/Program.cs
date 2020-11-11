@@ -46,9 +46,10 @@
                     // we use original page's width and height for image as well as default rendering settings
                     using (Bitmap bitmap = currentPage.Render((int)currentPage.Width, (int)currentPage.Height, settings))
                     {
-                        bitmap.Save(string.Format("{0}.png", i), ImageFormat.Png);
+                        bitmap.Save($"{i}.png", ImageFormat.Png);
                     }
                 }
+				System.Diagnostics.Process.Start("0.png");
             }
         }
     }

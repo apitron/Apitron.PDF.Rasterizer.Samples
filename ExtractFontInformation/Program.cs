@@ -11,17 +11,15 @@
         {
             // open and load the file
             using (FileStream fs = new FileStream(@"..\..\..\Documents\testfile.pdf", FileMode.Open))
+			using (Document document = new Document(fs)) // this object represents a PDF document
             {
-                // this objects represents a PDF document
-                Document document = new Document(fs);
-
                 // enumerate fonts used in document
                 foreach (Font font in document.Fonts)
                 {
                     // print out the font name, its type and state
-                    Console.WriteLine(string.Format("Font name: {0}", font.Name));
-                    Console.WriteLine(string.Format("Font type: {0}", Enum.GetName(typeof(FontType), font.Type)));
-                    Console.WriteLine(string.Format("Font state: {0}", Enum.GetName(typeof(FontState), font.State)));
+                    Console.WriteLine($"Font name: { font.Name }");
+                    Console.WriteLine($"Font type: { Enum.GetName(typeof(FontType), font.Type) }");
+                    Console.WriteLine($"Font state:{ Enum.GetName(typeof(FontState), font.State) }");
                 }
 
                 Console.ReadLine();

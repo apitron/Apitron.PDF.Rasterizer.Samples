@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Aptiron LTD.")]
 [assembly: AssemblyProduct("UniversalAppSamplePDFViewerControlForWindows10")]
-[assembly: AssemblyCopyright("Copyright Apitron LTD©  2016")]
+[assembly: AssemblyCopyright("Copyright Apitron LTD©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

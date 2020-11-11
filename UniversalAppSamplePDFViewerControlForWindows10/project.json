@@ -1,6 +1,6 @@
 ﻿{
   "dependencies": {
-    "Apitron.PDF.Rasterizer": "3.0.73",
+    "Apitron.PDF.Rasterizer": "3.0.95",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
   },
   "frameworks": {

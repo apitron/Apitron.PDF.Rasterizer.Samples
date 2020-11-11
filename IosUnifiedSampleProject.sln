@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IosSampleProject", "iOSUnified/IosSampleProject.csproj", "{F20DA017-0016-417E-821B-AB689C1998AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		Ad-Hoc|iPhoneSimulator = Ad-Hoc|iPhoneSimulator
+		AppStore|iPhone = AppStore|iPhone
+		AppStore|iPhoneSimulator = AppStore|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F20DA017-0016-417E-821B-AB689C1998AF}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{F20DA017-0016-417E-821B-AB689C1998AF}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{F20DA017-0016-417E-821B-AB689C1998AF}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
+		{F20DA017-0016-417E-821B-AB689C1998AF}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
+		{F20DA017-0016-417E-821B-AB689C1998AF}.Ad-Hoc|iPhoneSimulator.Deploy.0 = Ad-Hoc|iPhoneSimulator
+		{F20DA017-0016-417E-821B-AB689C1998AF}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{F20DA017-0016-417E-821B-AB689C1998AF}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{F20DA017-0016-417E-821B-AB689C1998AF}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
+		{F20DA017-0016-417E-821B-AB689C1998AF}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
+		{F20DA017-0016-417E-821B-AB689C1998AF}.AppStore|iPhoneSimulator.Deploy.0 = AppStore|iPhoneSimulator
+		{F20DA017-0016-417E-821B-AB689C1998AF}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{F20DA017-0016-417E-821B-AB689C1998AF}.Debug|iPhone.Build.0 = Debug|iPhone
+		{F20DA017-0016-417E-821B-AB689C1998AF}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{F20DA017-0016-417E-821B-AB689C1998AF}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{F20DA017-0016-417E-821B-AB689C1998AF}.Release|iPhone.ActiveCfg = Release|iPhone
+		{F20DA017-0016-417E-821B-AB689C1998AF}.Release|iPhone.Build.0 = Release|iPhone
+		{F20DA017-0016-417E-821B-AB689C1998AF}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{F20DA017-0016-417E-821B-AB689C1998AF}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = IosSampleProject.csproj
+	EndGlobalSection
+EndGlobal

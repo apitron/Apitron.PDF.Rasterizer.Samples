@@ -9,15 +9,16 @@
         private static void Main(string[] args)
         {
             // open and load the file
-            using (FileStream fs = new FileStream(@"..\..\..\Documents\testfile.pdf", FileMode.Open), fsOut = File.Create("out.tiff"))
+            using (FileStream fs = new FileStream(@"..\..\..\..\development guide.pdf", FileMode.Open), fsOut = File.Create("out.tiff"))
+			using (Document document = new Document(fs)) // this object represents a PDF document
             {
-                // this objects represents a PDF document
-                Document document = new Document(fs);
-
                 // save to tiff using CCIT4 compression, black and white tiff.
                 // set the DPI to 144.0 for this sample, so twice more than default PDF dpi setting.
-                TiffRenderingSettings tiffRenderingSettings = new TiffRenderingSettings(TiffCompressionMethod.LZW, 144, 144);
+                TiffRenderingSettings tiffRenderingSettings = new TiffRenderingSettings(TiffCompressionMethod.CCIT4, 144, 144);
 
+                // set the white color brightness level 
+                tiffRenderingSettings.WhiteColorTolerance = 0.9f;
+                
                 document.SaveToTiff(fsOut, tiffRenderingSettings);
 
                 System.Diagnostics.Process.Start("out.tiff");

@@ -19,16 +19,16 @@ namespace ViewDocumentInformation
                 DocumentInfo info = document.DocumentInfo;
 
                 // print out desired fields
-                Console.WriteLine(string.Format("Document title:{0}", info.Title));
-                Console.WriteLine(string.Format("Page count:{0}", document.Pages.Count));
-                Console.WriteLine(string.Format("Document author:{0}", info.Author));
-                Console.WriteLine(string.Format("Created with:{0}", info.Producer));
+                Console.WriteLine($"Document title:{info.Title}");
+                Console.WriteLine($"Page count:{document.Pages.Count}");
+                Console.WriteLine($"Document author:{info.Author}");
+                Console.WriteLine($"Created with:{info.Producer}");
 
                 // dates by default are returned as they are written in PDF file,
                 // to give you the full control over stored information.
                 // helper method used below, converts PDF date representation to DateTime object.
                 // you may use it, if you don't need special processing
-                Console.WriteLine( string.Format("Creation date:{0}", DocumentInfo.ParsePdfDate( info.CreationDate ) ) );
+                Console.WriteLine($"Creation date:{DocumentInfo.ParsePdfDate(info.CreationDate)}");
 
                 // read further if needed..
 
